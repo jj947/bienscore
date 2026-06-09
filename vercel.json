@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/app", "destination": "/public/index.html" },
+    { "source": "/sitemap.xml", "destination": "/public/sitemap.xml" },
+    { "source": "/robots.txt", "destination": "/public/robots.txt" },
+    { "source": "/favicon.svg", "destination": "/public/favicon.svg" },
+    { "source": "/logo.svg", "destination": "/public/logo.svg" },
+    { "source": "/", "destination": "/public/landing.html" }
+  ]
+}
