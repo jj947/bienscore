@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="google-site-verification" content="MN5IMSiqJStHk7ENYun7wG55u6h-gV_YwqXTQd_HToc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cash-flow immobilier : définition, calcul et optimisation (2025)</title>
+<meta name="description" content="Comprendre et calculer le cash-flow immobilier pour optimiser votre investissement locatif. Formules, exemples concrets et outil de calcul gratuit."/>
+<meta name="keywords" content="cash-flow immobilier, cash flow locatif, calcul cash flow, investissement locatif cash flow positif"/>
+<link rel="canonical" href="https://bienscore.vercel.app/cash-flow-immobilier"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Cash-flow immobilier : définition, calcul et optimisation","description":"Guide complet sur le cash-flow en investissement locatif : formules, exemples et outils de calcul.","author":{"@type":"Organization","name":"BienScore"},"publisher":{"@type":"Organization","name":"BienScore","url":"https://bienscore.vercel.app"},"datePublished":"2025-01-01","inLanguage":"fr"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0B1829;--blue:#2563EB;--green:#059669;--red:#DC2626;--text:#0F172A;--text2:#475569;--text3:#94A3B8;--border:#E2E8F0;--bg:#F8FAFC;--font-display:'DM Serif Display',serif;--font-body:'DM Sans',sans-serif}
+body{font-family:var(--font-body);background:#fff;color:var(--text);line-height:1.7}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-size:20px;color:var(--navy);text-decoration:none}
+.nav-logo span{color:var(--blue)}
+.nav-cta{padding:8px 18px;background:var(--navy);color:#fff;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none}
+.container{max-width:760px;margin:0 auto;padding:3rem 2rem}
+h1{font-family:var(--font-display);font-size:2.2rem;color:var(--navy);letter-spacing:-.5px;line-height:1.2;margin-bottom:1rem}
+h2{font-family:var(--font-display);font-size:1.5rem;color:var(--navy);margin:2.5rem 0 1rem}
+h3{font-size:1.1rem;font-weight:600;color:var(--navy);margin:1.5rem 0 .5rem}
+p{font-size:15px;color:var(--text2);margin-bottom:1.25rem;line-height:1.8}
+ul,ol{font-size:15px;color:var(--text2);padding-left:1.5rem;margin-bottom:1.25rem;line-height:1.8}
+li{margin-bottom:.4rem}
+strong{color:var(--text);font-weight:600}
+.formula-box{background:var(--bg);border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:8px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-family:monospace;font-size:15px;color:var(--navy)}
+.formula-label{font-family:var(--font-body);font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin-bottom:.5rem}
+.example-box{background:#ECFDF5;border:1px solid #A7F3D0;border-radius:12px;padding:1.5rem;margin:1.5rem 0}
+.example-box h3{color:#065F46;margin-top:0}
+.example-box p{color:#047857;margin-bottom:.5rem}
+.negative-box{background:#FEF2F2;border:1px solid #FECACA;border-radius:12px;padding:1.5rem;margin:1.5rem 0}
+.negative-box h3{color:#991B1B;margin-top:0}
+.negative-box p{color:#B91C1C;margin-bottom:.5rem}
+.tip-box{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:14px;color:#1E40AF}
+.cta-box{background:var(--navy);border-radius:16px;padding:2rem;text-align:center;margin:3rem 0}
+.cta-box h2{color:#fff;margin-top:0;font-size:1.4rem}
+.cta-box p{color:rgba(255,255,255,.7);margin-bottom:1.25rem}
+.cta-btn{display:inline-block;padding:12px 28px;background:#2563EB;color:#fff;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none}
+.meta{font-size:13px;color:var(--text3);margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+.toc{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin:2rem 0}
+.toc-title{font-size:13px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin-bottom:.75rem}
+.toc a{display:block;font-size:14px;color:var(--blue);text-decoration:none;padding:3px 0;border-bottom:1px solid var(--border)}
+.toc a:last-child{border-bottom:none}
+footer{background:var(--navy);padding:2rem;text-align:center;color:rgba(255,255,255,.5);font-size:13px;margin-top:4rem}
+footer a{color:rgba(255,255,255,.6);text-decoration:none;margin:0 .75rem}
+@media(max-width:600px){.container{padding:2rem 1rem}h1{font-size:1.7rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">Bien<span>Score</span></a>
+  <a href="/app" class="nav-cta">Calculer gratuitement →</a>
+</nav>
+<div class="container">
+  <p class="meta">📅 Mis à jour en 2025 · 7 min de lecture · <a href="/app" style="color:var(--blue)">Outil gratuit</a></p>
+  <h1>Cash-flow immobilier : définition, calcul et comment l'optimiser</h1>
+  <p>Le cash-flow est l'indicateur le plus concret de la santé financière d'un investissement locatif. Contrairement au rendement qui reste abstrait, le cash-flow se ressent chaque mois sur votre compte bancaire.</p>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <a href="#definition">1. Qu'est-ce que le cash-flow immobilier ?</a>
+    <a href="#calcul">2. Comment le calculer ?</a>
+    <a href="#positif">3. Cash-flow positif vs négatif</a>
+    <a href="#optimiser">4. Comment optimiser son cash-flow ?</a>
+    <a href="#credit">5. Impact du crédit immobilier</a>
+    <a href="#outil">6. Calculateur gratuit</a>
+  </div>
+
+  <h2 id="definition">1. Qu'est-ce que le cash-flow immobilier ?</h2>
+  <p>Le cash-flow immobilier est la différence entre les revenus locatifs perçus et l'ensemble des dépenses liées au bien (charges, taxes, crédit). C'est le flux de trésorerie net que génère votre investissement chaque mois.</p>
+  <p>Un <strong>cash-flow positif</strong> signifie que votre bien génère plus d'argent qu'il n'en coûte — il s'autofinance et dégage même un bénéfice mensuel. Un <strong>cash-flow négatif</strong> signifie que vous devez compléter de votre poche chaque mois.</p>
+
+  <h2 id="calcul">2. Comment calculer le cash-flow immobilier ?</h2>
+  <div class="formula-box">
+    <div class="formula-label">Formule cash-flow hors crédit</div>
+    Cash-flow = Loyer HC − Charges copro − Taxe foncière/12 − Assurance/12 − Frais gestion − Provision vacance
+  </div>
+  <div class="formula-box">
+    <div class="formula-label">Formule cash-flow après crédit</div>
+    Cash-flow net = Loyer HC − Toutes charges − Mensualité crédit
+  </div>
+
+  <h2 id="positif">3. Cash-flow positif vs négatif : que choisir ?</h2>
+  <div class="example-box">
+    <h3>✅ Exemple de cash-flow positif</h3>
+    <p><strong>Studio à Roubaix · 60 000 €</strong></p>
+    <p>Loyer : 500 € — Charges : 80 € — Taxe foncière : 50 €/mois — Mensualité crédit : 280 €</p>
+    <p><strong>Cash-flow = 500 − 80 − 50 − 280 = +90 €/mois</strong></p>
+    <p>Le bien s'autofinance et génère 90€ par mois.</p>
+  </div>
+  <div class="negative-box">
+    <h3>⚠️ Exemple de cash-flow négatif</h3>
+    <p><strong>T3 à Paris 75011 · 450 000 €</strong></p>
+    <p>Loyer : 1 800 € — Charges : 200 € — Taxe foncière : 120 €/mois — Mensualité crédit : 2 100 €</p>
+    <p><strong>Cash-flow = 1 800 − 200 − 120 − 2 100 = −620 €/mois</strong></p>
+    <p>Vous devez apporter 620€ de votre poche chaque mois, en espérant une forte plus-value.</p>
+  </div>
+  <p>Le cash-flow négatif n'est pas forcément à éviter — à Paris ou Lyon, les biens s'apprécient fortement en valeur. Mais il faut pouvoir assumer l'effort d'épargne mensuel.</p>
+
+  <h2 id="optimiser">4. Comment optimiser son cash-flow locatif ?</h2>
+  <ul>
+    <li><strong>Négocier le prix d'achat</strong> — chaque 10 000€ de moins réduit les mensualités et améliore le cash-flow</li>
+    <li><strong>Passer en location meublée</strong> — les loyers sont 15-30% plus élevés qu'en nu</li>
+    <li><strong>Réduire la vacance locative</strong> — un mois de vacance annule 8% de vos revenus</li>
+    <li><strong>Éviter les syndics trop chers</strong> — les charges de copropriété peuvent varier du simple au double</li>
+    <li><strong>Optimiser la durée du crédit</strong> — allonger la durée réduit les mensualités (mais augmente le coût total)</li>
+    <li><strong>Choisir les bonnes villes</strong> — les villes moyennes (Roubaix, Saint-Étienne, Mulhouse) offrent de meilleurs cash-flows que Paris</li>
+  </ul>
+
+  <h2 id="credit">5. Impact du crédit sur le cash-flow</h2>
+  <p>Le crédit immobilier est le principal poste de dépense dans le calcul du cash-flow. La mensualité dépend de trois paramètres : le montant emprunté, le taux d'intérêt et la durée.</p>
+  <div class="tip-box">💡 <strong>Astuce :</strong> Avec BienScore, vous pouvez simuler l'impact de différentes durées de crédit sur votre cash-flow en temps réel. Un crédit sur 25 ans au lieu de 20 ans peut transformer un cash-flow négatif en positif.</div>
+
+  <div class="cta-box">
+    <h2>Calculez le cash-flow de votre bien en 30 secondes</h2>
+    <p>BienScore intègre toutes les charges et simule votre crédit pour vous donner le cash-flow réel.</p>
+    <a href="/app" class="cta-btn">🏠 Calculer mon cash-flow gratuitement</a>
+  </div>
+
+  <h2>FAQ sur le cash-flow immobilier</h2>
+  <h3>Est-il possible d'avoir un cash-flow positif en 2025 ?</h3>
+  <p>Oui, mais c'est devenu plus difficile avec la hausse des taux (3-4% en 2024-2025). Il faut viser des villes avec un bon ratio loyer/prix, négocier fortement et optimiser toutes les charges.</p>
+  <h3>Quel cash-flow viser pour un bon investissement ?</h3>
+  <p>Un cash-flow nul (autofinancement) est déjà un bon résultat en 2025. Au-delà de +100€/mois, c'est excellent. En dessous de −200€/mois, l'effort d'épargne devient contraignant pour la plupart des investisseurs.</p>
+  <h3>Le cash-flow est-il imposable ?</h3>
+  <p>Oui, les revenus locatifs sont imposables. En régime réel, vous pouvez déduire les charges et les intérêts d'emprunt, ce qui réduit la base imposable. Consultez un conseiller fiscal pour optimiser votre situation.</p>
+</div>
+<footer>
+  <a href="/">Accueil</a><a href="/app">Outil gratuit</a><a href="/rendement-locatif">Rendement locatif</a><a href="/analyse-investissement-immobilier">Guide investissement</a>
+  <div style="margin-top:1rem">© 2025 BienScore · Calculateur de cash-flow immobilier</div>
+</footer>
+</body>
+</html>

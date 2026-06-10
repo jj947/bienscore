@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="google-site-verification" content="MN5IMSiqJStHk7ENYun7wG55u6h-gV_YwqXTQd_HToc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Comment calculer le rendement locatif d'un bien immobilier ? (Formule + Outil gratuit)</title>
+<meta name="description" content="Apprenez à calculer le rendement brut et net d'un investissement locatif avec nos formules expliquées. Utilisez notre calculateur gratuit pour analyser vos biens."/>
+<meta name="keywords" content="calcul rendement locatif, rendement brut, rendement net, investissement locatif, formule rendement immobilier"/>
+<link rel="canonical" href="https://bienscore.vercel.app/rendement-locatif"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<meta property="og:title" content="Comment calculer le rendement locatif ? Formule + Outil gratuit"/>
+<meta property="og:description" content="Rendement brut, net, cash-flow : toutes les formules expliquées + calculateur en ligne gratuit."/>
+<meta property="og:url" content="https://bienscore.vercel.app/rendement-locatif"/>
+<meta property="og:type" content="article"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Comment calculer le rendement locatif d'un bien immobilier ?","description":"Guide complet pour calculer le rendement brut, net et le cash-flow d'un investissement locatif.","author":{"@type":"Organization","name":"BienScore"},"publisher":{"@type":"Organization","name":"BienScore","url":"https://bienscore.vercel.app"},"datePublished":"2025-01-01","inLanguage":"fr"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0B1829;--blue:#2563EB;--green:#059669;--text:#0F172A;--text2:#475569;--text3:#94A3B8;--border:#E2E8F0;--bg:#F8FAFC;--font-display:'DM Serif Display',serif;--font-body:'DM Sans',sans-serif}
+body{font-family:var(--font-body);background:#fff;color:var(--text);line-height:1.7}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:var(--font-display);font-size:20px;color:var(--navy);text-decoration:none}
+.nav-logo span{color:var(--blue)}
+.nav-cta{padding:8px 18px;background:var(--navy);color:#fff;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none}
+.container{max-width:760px;margin:0 auto;padding:3rem 2rem}
+h1{font-family:var(--font-display);font-size:2.2rem;color:var(--navy);letter-spacing:-.5px;line-height:1.2;margin-bottom:1rem}
+h2{font-family:var(--font-display);font-size:1.5rem;color:var(--navy);margin:2.5rem 0 1rem}
+h3{font-size:1.1rem;font-weight:600;color:var(--navy);margin:1.5rem 0 .5rem}
+p{font-size:15px;color:var(--text2);margin-bottom:1.25rem;line-height:1.8}
+ul,ol{font-size:15px;color:var(--text2);padding-left:1.5rem;margin-bottom:1.25rem;line-height:1.8}
+li{margin-bottom:.4rem}
+strong{color:var(--text);font-weight:600}
+.formula-box{background:var(--bg);border:1px solid var(--border);border-left:4px solid var(--blue);border-radius:8px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-family:monospace;font-size:15px;color:var(--navy)}
+.formula-label{font-family:var(--font-body);font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin-bottom:.5rem}
+.example-box{background:#ECFDF5;border:1px solid #A7F3D0;border-radius:12px;padding:1.5rem;margin:1.5rem 0}
+.example-box h3{color:#065F46;margin-top:0}
+.example-box p{color:#047857;margin-bottom:.5rem}
+.example-box .result{font-size:1.3rem;font-weight:700;color:#059669;margin-top:.75rem}
+.warning-box{background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:14px;color:#92400E}
+.cta-box{background:var(--navy);border-radius:16px;padding:2rem;text-align:center;margin:3rem 0}
+.cta-box h2{color:#fff;margin-top:0;font-size:1.4rem}
+.cta-box p{color:rgba(255,255,255,.7);margin-bottom:1.25rem}
+.cta-btn{display:inline-block;padding:12px 28px;background:#2563EB;color:#fff;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none;transition:background .15s}
+.cta-btn:hover{background:#1D4ED8}
+.toc{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin:2rem 0}
+.toc-title{font-size:13px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin-bottom:.75rem}
+.toc a{display:block;font-size:14px;color:var(--blue);text-decoration:none;padding:3px 0;border-bottom:1px solid var(--border)}
+.toc a:last-child{border-bottom:none}
+.toc a:hover{color:#1D4ED8}
+.meta{font-size:13px;color:var(--text3);margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+footer{background:var(--navy);padding:2rem;text-align:center;color:rgba(255,255,255,.5);font-size:13px;margin-top:4rem}
+footer a{color:rgba(255,255,255,.6);text-decoration:none;margin:0 .75rem}
+@media(max-width:600px){.container{padding:2rem 1rem}h1{font-size:1.7rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">Bien<span>Score</span></a>
+  <a href="/app" class="nav-cta">Calculer gratuitement →</a>
+</nav>
+<div class="container">
+  <p class="meta">📅 Mis à jour en 2025 · 8 min de lecture · <a href="/app" style="color:var(--blue)">Outil gratuit</a></p>
+
+  <h1>Comment calculer le rendement locatif d'un bien immobilier ?</h1>
+  <p>Le rendement locatif est l'indicateur clé pour évaluer la rentabilité d'un investissement immobilier. Mais attention : il existe plusieurs façons de le calculer, et la différence entre rendement brut et rendement net peut transformer une bonne affaire en mauvaise surprise.</p>
+  <p>Dans ce guide, nous vous expliquons toutes les formules avec des exemples concrets, et comment utiliser <strong>BienScore</strong> pour automatiser ces calculs en quelques secondes.</p>
+
+  <div class="toc">
+    <div class="toc-title">Sommaire</div>
+    <a href="#brut">1. Le rendement brut</a>
+    <a href="#net">2. Le rendement net</a>
+    <a href="#cashflow">3. Le cash-flow mensuel</a>
+    <a href="#bon-rendement">4. Quel rendement viser ?</a>
+    <a href="#exemple">5. Exemple complet</a>
+    <a href="#outil">6. Calculateur gratuit</a>
+  </div>
+
+  <h2 id="brut">1. Le rendement locatif brut</h2>
+  <p>Le rendement brut est le calcul le plus simple — il met en rapport les loyers annuels avec le prix d'achat du bien. C'est le chiffre souvent affiché par les agents immobiliers.</p>
+  <div class="formula-box">
+    <div class="formula-label">Formule rendement brut</div>
+    Rendement brut (%) = (Loyer mensuel × 12) ÷ Prix total × 100
+  </div>
+  <p>Le <strong>prix total</strong> doit inclure les frais de notaire (7-8% dans l'ancien) et les travaux éventuels. Ne vous arrêtez jamais au prix affiché de l'annonce.</p>
+  <div class="warning-box">⚠️ Le rendement brut ne tient pas compte des charges. Il est toujours plus élevé que le rendement net. Ne vous fiez pas uniquement à lui pour prendre une décision.</div>
+
+  <h2 id="net">2. Le rendement locatif net</h2>
+  <p>Le rendement net déduit toutes les charges annuelles des revenus locatifs. C'est le chiffre qui compte vraiment pour évaluer la rentabilité réelle de votre investissement.</p>
+  <div class="formula-box">
+    <div class="formula-label">Formule rendement net</div>
+    Rendement net (%) = (Loyers annuels − Charges annuelles) ÷ Prix total × 100
+  </div>
+  <h3>Les charges à déduire</h3>
+  <ul>
+    <li><strong>Taxe foncière</strong> : variable selon la commune, en moyenne 800-1500€/an pour un T2</li>
+    <li><strong>Charges de copropriété</strong> : partie non récupérable sur le locataire</li>
+    <li><strong>Assurance propriétaire non-occupant (PNO)</strong> : 100-300€/an</li>
+    <li><strong>Frais de gestion locative</strong> : 6-10% des loyers si vous passez par une agence</li>
+    <li><strong>Provision pour vacance locative</strong> : comptez 1 mois de loyer par an en moyenne</li>
+    <li><strong>Provision pour travaux et entretien</strong> : 1-2% de la valeur du bien par an</li>
+  </ul>
+
+  <h2 id="cashflow">3. Le cash-flow mensuel</h2>
+  <p>Le cash-flow est la différence entre vos revenus locatifs et toutes vos dépenses mensuelles, y compris la mensualité de crédit si vous avez emprunté. C'est l'indicateur le plus concret au quotidien.</p>
+  <div class="formula-box">
+    <div class="formula-label">Formule cash-flow</div>
+    Cash-flow = Loyer HC − Charges mensuelles − Mensualité crédit
+  </div>
+  <p>Un cash-flow positif signifie que votre bien s'autofinance. Un cash-flow négatif (appelé "effort d'épargne") n'est pas forcément rédhibitoire si la plus-value à terme le justifie, mais il faut pouvoir l'assumer chaque mois.</p>
+
+  <h2 id="bon-rendement">4. Quel rendement viser pour un bon investissement ?</h2>
+  <p>Il n'existe pas de réponse universelle — le "bon" rendement dépend de votre stratégie, de votre zone géographique et du risque que vous acceptez. Voici les repères généralement admis :</p>
+  <ul>
+    <li><strong>Rendement brut &lt; 4%</strong> : faible, difficile d'atteindre le cash-flow positif</li>
+    <li><strong>Rendement brut 4-6%</strong> : moyen, possible avec un bon financement</li>
+    <li><strong>Rendement brut 6-8%</strong> : bon, cash-flow souvent positif</li>
+    <li><strong>Rendement brut &gt; 8%</strong> : excellent, mais vérifiez pourquoi (risque locatif, travaux importants ?)</li>
+  </ul>
+  <p>En grandes métropoles (Paris, Lyon, Bordeaux), les rendements sont structurellement plus faibles (2-4%) mais la valorisation du capital est plus forte. En province ou dans les villes moyennes, des rendements de 7-10% sont atteignables.</p>
+
+  <h2 id="exemple">5. Exemple complet de calcul</h2>
+  <div class="example-box">
+    <h3>📍 T2 à Nantes — 180 000 €</h3>
+    <p><strong>Prix d'achat :</strong> 180 000 € + 13 500 € frais notaire + 5 000 € travaux = <strong>198 500 € total</strong></p>
+    <p><strong>Loyer mensuel HC :</strong> 780 €</p>
+    <p><strong>Charges annuelles :</strong> taxe foncière 900 € + charges copro 960 € + PNO 150 € + vacance 780 € = 2 790 €</p>
+    <p>Rendement brut = (780 × 12) / 198 500 × 100 = <strong>4,72 %</strong></p>
+    <p>Rendement net = (9 360 − 2 790) / 198 500 × 100 = <strong>3,31 %</strong></p>
+    <div class="result">Cash-flow = 780 − 232 € charges = +548 €/mois (hors crédit)</div>
+  </div>
+
+  <h2 id="outil">6. Calculateur de rendement locatif gratuit</h2>
+  <p>Faire ces calculs à la main est fastidieux et source d'erreurs. <strong>BienScore</strong> automatise l'intégralité de ces calculs et vous donne un score de rentabilité sur 100 en quelques secondes.</p>
+  <p>Avec la version Pro, vous pouvez même coller l'URL d'une annonce Leboncoin ou SeLoger — l'IA extrait automatiquement toutes les données et pré-remplit le formulaire.</p>
+
+  <div class="cta-box">
+    <h2>Calculez le rendement de votre bien gratuitement</h2>
+    <p>Score /100, rendement brut et net, cash-flow, simulation crédit — en 30 secondes.</p>
+    <a href="/app" class="cta-btn">🏠 Analyser un bien maintenant</a>
+  </div>
+
+  <h2>Questions fréquentes sur le rendement locatif</h2>
+  <h3>Quelle différence entre rendement brut et rendement net ?</h3>
+  <p>Le rendement brut ne tient compte que des loyers et du prix d'achat. Le rendement net déduit toutes les charges (taxe foncière, copropriété, assurance, gestion). Le rendement net est toujours inférieur au brut — souvent de 1,5 à 2 points.</p>
+  <h3>Comment augmenter le rendement locatif d'un bien ?</h3>
+  <p>Plusieurs leviers : négocier le prix d'achat, opter pour la location meublée (loyers plus élevés), réduire les charges, éviter les vacances locatives, ou choisir des villes avec un bon rapport prix/loyer.</p>
+  <h3>Le rendement locatif suffit-il pour évaluer un investissement ?</h3>
+  <p>Non — il faut aussi considérer le potentiel de plus-value, la qualité du locataire, l'emplacement, l'état du bien et la fiscalité (régime micro-foncier ou réel). BienScore intègre 5 critères pour vous donner une vision complète.</p>
+</div>
+
+<footer>
+  <a href="/">Accueil</a><a href="/app">Outil gratuit</a><a href="/analyse-investissement-immobilier">Guide investissement</a><a href="/cash-flow-immobilier">Cash-flow</a>
+  <div style="margin-top:1rem">© 2025 BienScore · Calculateur de rendement locatif gratuit</div>
+</footer>
+</body>
+</html>

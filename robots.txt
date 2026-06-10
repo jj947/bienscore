@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bienscore.vercel.app/sitemap.xml
